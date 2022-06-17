@@ -17,4 +17,15 @@ public class BowlingTest {
         assertEquals(0, game.score());
     }
 
+    @Test
+    public void scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame(){
+        Game game = new Game();
+
+        for(int rolls=0;rolls<=2;rolls++){
+            game.roll(1);
+        }
+
+        assertEquals(2, game.score());
+    }
+
 }

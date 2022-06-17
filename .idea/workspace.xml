@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25054339-881f-484b-ad7d-82284208ce9d" name="Changes" comment="added bowling test">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bowling/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+    <list default="true" id="25054339-881f-484b-ad7d-82284208ce9d" name="Changes" comment="Added Test- scoreShouldReturnZeroWhenZeroPinIsKnockedInAFrame (green)">
       <change beforePath="$PROJECT_DIR$/src/test/java/bowling/BowlingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bowling/BowlingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +51,7 @@
       <recent name="bowling" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BowlingTest">
+  <component name="RunManager" selected="JUnit.BowlingTest.scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="kata" />
@@ -101,6 +96,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BowlingTest.scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bowling" />
+      <option name="MAIN_CLASS_NAME" value="bowling.BowlingTest" />
+      <option name="METHOD_NAME" value="scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BowlingTest.scoreShouldReturnZeroWhenZeroPinsAreKnocked" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kata" />
       <extension name="coverage">
@@ -119,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BowlingTest.scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame" />
         <item itemvalue="JUnit.BowlingTest" />
         <item itemvalue="JUnit.BowlingTest.scoreShouldReturnTwoWhenOnePinIsKnockedInAFrame" />
         <item itemvalue="JUnit.BowlingTest.scoreShouldReturnZeroWhenZeroPinsAreKnocked" />
@@ -149,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655450330249</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Test- scoreShouldReturnZeroWhenZeroPinIsKnockedInAFrame (green)">
+      <created>1655459714655</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655459714655</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +185,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="added bowling test" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bowling test" />
+    <MESSAGE value="Added Test- scoreShouldReturnZeroWhenZeroPinIsKnockedInAFrame (green)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Test- scoreShouldReturnZeroWhenZeroPinIsKnockedInAFrame (green)" />
   </component>
 </project>
