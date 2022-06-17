@@ -12,8 +12,22 @@ public class BowlingScoresTest {
         BowlingScores bowlingScores =new BowlingScores();
         final int EXPECTED_SCORE=0;
         int pinsKnocked=0;
-        bowlingScores.roll(0);
+
+        bowlingScores.roll(pinsKnocked);
         int actualScore = bowlingScores.score();
+
+        assertEquals(EXPECTED_SCORE,actualScore);
+    }
+
+    @Test
+    public void shouldReturnTwoScoreWhenTwoPinsKnocked(){
+        BowlingScores bowlingScores =new BowlingScores();
+        final int EXPECTED_SCORE=2;
+        int pinsKnocked=2;
+
+        bowlingScores.roll(pinsKnocked);
+        int actualScore = bowlingScores.score();
+
         assertEquals(EXPECTED_SCORE,actualScore);
     }
 }
