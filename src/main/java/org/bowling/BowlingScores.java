@@ -1,12 +1,17 @@
 package org.bowling;
 
 public class BowlingScores {
-    int totalScores=0;
+    private int totalScores=0;
     public void roll(int numberOfKnockedPins) {
-        totalScores = totalScores + numberOfKnockedPins;
+        setTotalScores(numberOfKnockedPins);
     }
-
     public int score() {
+        return totalScores;
+    }
+    private void setTotalScores(int knockedPins){
+        totalScores = totalScores + knockedPins;
+    }
+    private int getTotalScores(){
         return totalScores;
     }
 }
