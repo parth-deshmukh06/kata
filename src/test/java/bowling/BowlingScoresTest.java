@@ -8,13 +8,12 @@ import static org.junit.Assert.assertEquals;
 public class BowlingScoresTest {
 
     @Test
-    void shouldReturnZeroScoreWhenZeroPinKnocked(){
+    public void shouldReturnZeroScoreWhenZeroPinKnocked(){
         BowlingScores bowlingScores =new BowlingScores();
         final int EXPECTED_SCORE=0;
         int pinsKnocked=0;
         bowlingScores.roll(0);
-        int actualScore = bowlingScores.intScores();
+        int actualScore = bowlingScores.score();
         assertEquals(EXPECTED_SCORE,actualScore);
     }
-
 }
