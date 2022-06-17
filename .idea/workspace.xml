@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25054339-881f-484b-ad7d-82284208ce9d" name="Changes" comment="Added Test- scoreShouldReturnZeroWhenZeroPinIsKnockedInAFrame (green)">
+    <list default="true" id="25054339-881f-484b-ad7d-82284208ce9d" name="Changes" comment="Added Test- scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame() (green)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/bowling/BowlingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bowling/BowlingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,20 +52,7 @@
       <recent name="bowling" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BowlingTest.scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="kata" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BowlingTest.scoreShouldReturnNineteenWhenItsASpareAndThreePinsAreKnockedInEachRollOfNextFrame">
     <configuration name="BowlingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kata" />
       <extension name="coverage">
@@ -76,6 +64,22 @@
       <option name="PACKAGE_NAME" value="bowling" />
       <option name="MAIN_CLASS_NAME" value="bowling.BowlingTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BowlingTest.scoreShouldReturnNineteenWhenItsASpareAndThreePinsAreKnockedInEachRollOfNextFrame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bowling" />
+      <option name="MAIN_CLASS_NAME" value="bowling.BowlingTest" />
+      <option name="METHOD_NAME" value="scoreShouldReturnNineteenWhenItsASpareAndThreePinsAreKnockedInEachRollOfNextFrame" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BowlingTest.scoreShouldReturnNineteenWhenItsASpareAndThreePinsAreKnockedInEachRollOfNextFrame" />
         <item itemvalue="JUnit.BowlingTest.scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame" />
         <item itemvalue="JUnit.BowlingTest" />
         <item itemvalue="JUnit.BowlingTest.scoreShouldReturnTwoWhenOnePinIsKnockedInAFrame" />
         <item itemvalue="JUnit.BowlingTest.scoreShouldReturnZeroWhenZeroPinsAreKnocked" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655459714655</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Test- scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame() (red)">
+      <created>1655459867489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655459867489</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Test- scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame() (green)">
+      <created>1655460117695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655460117695</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +204,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="added bowling test" />
     <MESSAGE value="Added Test- scoreShouldReturnZeroWhenZeroPinIsKnockedInAFrame (green)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Test- scoreShouldReturnZeroWhenZeroPinIsKnockedInAFrame (green)" />
+    <MESSAGE value="Added Test- scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame() (red)" />
+    <MESSAGE value="Added Test- scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame() (green)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Test- scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame() (green)" />
   </component>
 </project>
