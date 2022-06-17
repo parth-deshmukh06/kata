@@ -30,4 +30,19 @@ public class BowlingScoresTest {
 
         assertEquals(EXPECTED_SCORE,actualScore);
     }
+
+    @Test
+    public void shouldReturnTotalScoreOfTwoRolls(){
+        BowlingScores bowlingScores =new BowlingScores();
+        final int EXPECTED_TOTAL_SCORE=6;
+        int pinsKnockedInFirstRoll=2;
+        int pinsKnockedInSecondRoll=4;
+
+        bowlingScores.roll(pinsKnockedInFirstRoll);
+        bowlingScores.roll(pinsKnockedInSecondRoll);
+        int actualScore = bowlingScores.score();
+
+        assertEquals(EXPECTED_TOTAL_SCORE,actualScore);
+    }
+
 }
