@@ -10,7 +10,7 @@ public class BowlingTest {
     public void scoreShouldReturnZeroWhenZeroPinIsKnockedInAFrame(){
         Game game = new Game();
 
-        for(int rolls=0;rolls<=2;rolls++){
+        for(int rolls=0;rolls<2;rolls++){
             game.roll(0);
         }
 
@@ -21,7 +21,7 @@ public class BowlingTest {
     public void scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame(){
         Game game = new Game();
 
-        for(int rolls=0;rolls<=2;rolls++){
+        for(int rolls=0;rolls<2;rolls++){
             game.roll(1);
         }
 
