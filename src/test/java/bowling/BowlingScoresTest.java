@@ -72,5 +72,21 @@ public class BowlingScoresTest {
         assertEquals(44,actualScore);
     }
 
+    @Test
+    public void testWholeGame(){
+        BowlingGame bowlingGame = new BowlingGame();
+        bowlingGame.roll(10);        //strike
+        bowlingGame.roll(5);        //spare
+        bowlingGame.roll(5);        //spare
+        for(int i=0;i<14;i++)
+        { bowlingGame.roll(1); }
+        bowlingGame.roll(5);        //spare
+        bowlingGame.roll(5);
+        bowlingGame.roll(5);
+
+        int actualScore = bowlingGame.score();
+
+        assertEquals(60,actualScore);
+    }
 
 }
