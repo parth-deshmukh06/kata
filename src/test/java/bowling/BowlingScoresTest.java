@@ -52,12 +52,25 @@ public class BowlingScoresTest {
         bowlingGame.roll(4);
         for(int i=0;i<17;i++)
         { bowlingGame.roll(1); }
+
         int actualScore = bowlingGame.score();
 
         assertEquals(35,actualScore);
-
     }
 
+    @Test
+    public void shouldAddBonusOfOneStrike(){
+        BowlingGame bowlingGame = new BowlingGame();
+        bowlingGame.roll(10);
+        bowlingGame.roll(5);
+        bowlingGame.roll(4);
+        for(int i=0;i<16;i++)
+        { bowlingGame.roll(1); }
+
+        int actualScore = bowlingGame.score();
+
+        assertEquals(39,actualScore);
+    }
 
 
 }
