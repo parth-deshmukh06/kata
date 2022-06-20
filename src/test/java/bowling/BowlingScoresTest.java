@@ -69,7 +69,7 @@ public class BowlingScoresTest {
 
         int actualScore = bowlingGame.score();
 
-        assertEquals(39,actualScore);
+        assertEquals(44,actualScore);
     }
 
 

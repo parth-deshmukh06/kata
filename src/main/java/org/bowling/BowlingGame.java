@@ -11,11 +11,19 @@ public class BowlingGame {
         int i=0;
         for(int frame=0;frame<10; frame++)
         {
-            if ((rolls[i] + rolls[i+1])==10) {
-                totalScores+=rolls[i+2];
+            int bonus=0;
+            if(rolls[i]==10) {
+                totalScores+=rolls[i]+rolls[i+1]+rolls[i+2];
+                i++;
             }
-            totalScores+= rolls[i]+rolls[i+1];
-            i+=2;
+            else if ((rolls[i] + rolls[i+1])==10) {
+                totalScores+=rolls[i]+rolls[i+1]+rolls[i+2];
+                i += 2;
+            }
+            else{
+                totalScores += rolls[i] + rolls[i + 1];
+                i += 2;
+            }
         }
         return totalScores;
     }
