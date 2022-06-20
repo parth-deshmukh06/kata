@@ -8,23 +8,37 @@ public class BowlingGame {
     }
     public int score() {
         int totalScores=0;
-        int i=0;
+        int rollsIndex=0;
         for(int frame=0;frame<10; frame++)
         {
-            int bonus=0;
-            if(rolls[i]==10) {
-                totalScores+=rolls[i]+rolls[i+1]+rolls[i+2];
-                i++;
+            if(isStrike(rollsIndex)) {
+                totalScores+=10+strikeBonus(rollsIndex);
+                rollsIndex++;
             }
-            else if ((rolls[i] + rolls[i+1])==10) {
-                totalScores+=rolls[i]+rolls[i+1]+rolls[i+2];
-                i += 2;
+            else if (isSpare(rollsIndex)) {
+                totalScores+=10+ spareBonus(rollsIndex);
+                rollsIndex += 2;
             }
             else{
-                totalScores += rolls[i] + rolls[i + 1];
-                i += 2;
+                totalScores += sumOfFrame(rollsIndex);
+                rollsIndex += 2;
             }
         }
         return totalScores;
+    }
+    private boolean isSpare(int rollsIndex){
+        return rolls[rollsIndex] + rolls[rollsIndex+1] == 10;
+    }
+    private boolean isStrike(int rollsIndex){
+        return rolls[rollsIndex] == 10;
+    }
+    private int strikeBonus(int rollsIndex){
+        return rolls[rollsIndex+1]+rolls[rollsIndex+2];
+    }
+    private int spareBonus(int rollsIndex){
+        return rolls[rollsIndex+2];
+    }
+    private int sumOfFrame(int rollsIndex){
+        return rolls[rollsIndex] + rolls[rollsIndex + 1];
     }
 }
