@@ -38,6 +38,15 @@ public class BowlingTest {
         assertEquals(19,game.score());
 
     }
+    @Test
+    public void scoreShouldReturnTwentyFourIfThereIsAStrikeFollowedByThreeAndFour(){
+        Game game = new Game();
+        game.roll(10);
+        game.roll(3);
+        game.roll(4);
+
+        assertEquals(24,game.score());
+    }
 
 
 }
