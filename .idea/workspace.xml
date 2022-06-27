@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25054339-881f-484b-ad7d-82284208ce9d" name="Changes" comment="Added Test- scoreShouldReturnNineteenWhenItsASpareAndThreePinsAreKnockedInEachRollOfNextFrame (red)">
+    <list default="true" id="25054339-881f-484b-ad7d-82284208ce9d" name="Changes" comment="Added Test- scoreShouldReturnTwentyFourIfThereIsAStrikeFollowedByThreeAndFour (red)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bowling/BowlingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bowling/BowlingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bowling/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <recent name="bowling" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BowlingTest.scoreShouldReturnTwentyFourIfThereIsAStrikeFollowedByThreeAndFour">
+  <component name="RunManager" selected="JUnit.BowlingTest">
     <configuration name="BowlingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kata" />
       <extension name="coverage">
@@ -134,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BowlingTest.scoreShouldReturnTwentyFourIfThereIsAStrikeFollowedByThreeAndFour" />
         <item itemvalue="JUnit.BowlingTest" />
+        <item itemvalue="JUnit.BowlingTest.scoreShouldReturnTwentyFourIfThereIsAStrikeFollowedByThreeAndFour" />
         <item itemvalue="JUnit.BowlingTest.scoreShouldReturnNineteenWhenItsASpareAndThreePinsAreKnockedInEachRollOfNextFrame" />
         <item itemvalue="JUnit.BowlingTest.scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame" />
         <item itemvalue="JUnit.BowlingTest.scoreShouldReturnTwoWhenOnePinIsKnockedInAFrame" />
@@ -193,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655461707679</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Test- scoreShouldReturnTwentyFourIfThereIsAStrikeFollowedByThreeAndFour (red)">
+      <created>1656306774022</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656306774022</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +221,7 @@
     <MESSAGE value="Added Test- scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame() (red)" />
     <MESSAGE value="Added Test- scoreShouldReturnTwoWhenOnePinIsKnockedInEachRollOfAFrame() (green)" />
     <MESSAGE value="Added Test- scoreShouldReturnNineteenWhenItsASpareAndThreePinsAreKnockedInEachRollOfNextFrame (red)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Test- scoreShouldReturnNineteenWhenItsASpareAndThreePinsAreKnockedInEachRollOfNextFrame (red)" />
+    <MESSAGE value="Added Test- scoreShouldReturnTwentyFourIfThereIsAStrikeFollowedByThreeAndFour (red)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Test- scoreShouldReturnTwentyFourIfThereIsAStrikeFollowedByThreeAndFour (red)" />
   </component>
 </project>

@@ -14,12 +14,18 @@ public class Game {
     public int score() {
         int i = 0;
         for(int frames=0;frames<10;frames++){
+            if(rollScore[i]==10){
+                score += 10 + rollScore[i+1] + rollScore[i+2];
+                i+=1;
+            }
             if(rollScore[i] + rollScore[i+1] == 10){
-                score = 10 + rollScore[i+2];
+                score += 10 + rollScore[i+2];
+                i+=2;
             }else{
                 score += rollScore[i] + rollScore[i+1];
+                i+=2;
             }
-            i+=2;
+
         }
 
         return score;
