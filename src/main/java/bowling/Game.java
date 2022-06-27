@@ -18,7 +18,7 @@ public class Game {
                 score += 10 + rollScore[i+1] + rollScore[i+2];
                 i+=1;
             }
-            if(rollScore[i] + rollScore[i+1] == 10){
+            else if(rollScore[i] + rollScore[i+1] == 10){
                 score += 10 + rollScore[i+2];
                 i+=2;
             }else{
